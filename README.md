@@ -1,6 +1,6 @@
 # vue-my-admin
 
-> A Vue.js project
+> 代码积累。
 
 ## Build Setup
 
