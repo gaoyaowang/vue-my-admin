@@ -8,6 +8,10 @@ import router from './router'
 
 import 'normalize.css/normalize.css'
 
+// anime动画库
+import anime from 'animejs/lib/anime.es.js';
+Vue.prototype.anime = anime
+
 Vue.use(ElementUI, {
   size: 'small'
 });
