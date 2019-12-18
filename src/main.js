@@ -15,7 +15,7 @@ Vue.prototype.anime = anime
 Vue.use(ElementUI, {
   size: 'small'
 });
-
+import './assets/css/index.less'
 
 Vue.config.productionTip = false
 

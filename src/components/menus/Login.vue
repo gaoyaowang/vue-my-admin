@@ -19,7 +19,7 @@
         </svg>
         <div class="form">
           <label for="userName">账号</label>
-          <input type="text" id="userName" v-model="form.userName" autocomplete="off" @focus="userNameFocus()">
+          <input type="text" id="userName" ref="userNameInput" v-model="form.userName" autocomplete="off" @focus="userNameFocus()">
           <label for="password">密码</label>
           <input type="password" id="password" v-model="form.password" @focus="passwordFocus()">
           <input type="submit" id="submit" value="登 录" @click="submitFocus()">
@@ -41,8 +41,8 @@
       }
     },
 
-    created() {
-
+    mounted(){
+      this.$refs.userNameInput.focus();
     },
     methods: {
       userNameFocus() {
@@ -103,9 +103,7 @@
           }
         });
         sessionStorage.setItem('author_id', '11')
-        setTimeout(function () {
-          that.$router.push("/index");
-        }, 300);
+        that.$router.push("/index");
 
       },
 
