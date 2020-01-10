@@ -35,7 +35,7 @@ export default {
       menuList: [
         {
           path: "/func1", //菜单项所对应的路由路径
-          title: "主导功能123", //菜单项名称
+          title: "零零零零", //菜单项名称
           children: [] //是否有子菜单，若没有，则为[]
         },
         {
